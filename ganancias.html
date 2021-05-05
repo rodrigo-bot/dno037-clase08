@@ -27,12 +27,26 @@ var ctx = document.getElementById('grafico').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ['IV Episodio', 'V Episodio', 'VI Episodio', 'I Episodio', 'II Episodio', 'II Episodio', 'VII Episodio', 'VIII Episodio', 'IX Episodio'],
-        datasets: [{
-            label: '# Costo de producción',
-            data: [11, 18, 32.5, 115, 115, 113, 245, 317, 275],
-            backgroundColor: 'rgba(20, 100, 180, 0.5)',
-            borderWidth: 0
+        labels: ['IV Episodio', 'V Episodio', 'VI Episodio', 'I Episodio', 'II Episodio', 'III Episodio', 'VII Episodio', 'VIII Episodio', 'IX Episodio'],
+        
+
+       datasets: [{
+           label: 'Costo de producción',
+           data: [13, 18, 32.5, 115, 115, 113, 245, 200, 275],
+           backgroundColor: 'rgba(20, 100, 180, 0.5)',
+           // this dataset is drawn below
+           order: 1
+       }, {
+            label: 'Ganancias',
+           data: [775, 538, 475, 1000, 649, 848, 2000, 1200, 1000],
+            backgroundColor: 'rgba(70, 100, 180, 0.5)',
+           
+           // this dataset is drawn on top
+           order: 2
+
+   
+
+
         }]
     },
     options: {
