@@ -26,6 +26,7 @@ a {
     font-weight: bold;
     color: rgba(255, 255, 255, 0.5);
     text-decoration: none;
+
 }
 
 a:hover {
@@ -47,6 +48,7 @@ nav, footer {
     margin-right:1%;
     min-height: 10vh;
     display: flex;
+    color: yellow;
 }
 
 nav p, footer p {
@@ -78,7 +80,8 @@ header div{
 header div h1{
     font-size:calc(1.5rem + 1vw);
     line-height: 1;
-    text-shadow: 0 0 2px var(--fondo);
+    text-shadsow: 0 0 2px var(--fondo);
+    color: yellow;
 }
 
 header div p{
@@ -149,6 +152,7 @@ main section{
 main section h1{
     font-size:calc(1.5rem + 1vw);
     line-height: 1;
+    color: yellow;
 }
 
 main section h3{
@@ -162,7 +166,7 @@ main section h4{
 }
 
 main section img{
-    max-width:100%;
+    max-width:60%;
     height:auto;
     margin:1.5rem 0;
 }
